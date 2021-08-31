@@ -1,4 +1,14 @@
-
+const userInput = employeeData => {
+    if (employeeData.officeNumber) {
+        return `Office Number: ${employeeData.officeNumber}`
+    }
+    if (employeeData.school) {
+        return `School: ${employeeData.school}`
+    }
+    if (employeeData.github) {
+        return `<p>Github: <a href="https://github.com/${employeeData.github}">${employeeData.github}</a></p>`
+    }
+}
 
 const generateEmployeeProfile = templateData => {
     return `
@@ -14,7 +24,7 @@ const generateEmployeeProfile = templateData => {
         <h3>${employee.getRole()}</h3>
         <p>${employee.getId()}</p>
         <p>Email: <a href="mailto:https://${employee.getEmail()}">${employee.getEmail}</a></p>
-        <p>${user()}</p>
+        <p>${userInput(employee)}</p>
         </div>
         `
     }).join(' ')}
