@@ -7,13 +7,13 @@ const generateEmployeeProfile = templateData => {
     <h1>Team Profiles</h1>
     </div>
     <div class="grid"> 
-    ${templateData.map(() => {
+    ${templateData.map((employee) => {
         return `
         <div>
-        <h2>${.getName()}</h2>
-        <h3>${.getRole()}</h3>
-        <p>${.getId()}</p>
-        <p>Email: <a href="mailto:https://${.getEmail()}">${.getEmail}</a></p>
+        <h2>${employee.getName()}</h2>
+        <h3>${employee.getRole()}</h3>
+        <p>${employee.getId()}</p>
+        <p>Email: <a href="mailto:https://${employee.getEmail()}">${employee.getEmail}</a></p>
         <p>${user()}</p>
         </div>
         `
