@@ -1,7 +1,22 @@
 # Team Profile Generator
 
 ## Description 
-This app generators profile of employees
+This app generates profile of employees
+
+### Demonstration
+
+View a complete video demonstration of the application: [Team Profile Generator Demo]()
+
+![Team-Profile-Generator-Demo]()
+
+
+![Terminal-Input](/img/generated-team-profiles.png)
+
+
+![Output-team-profile-generate]()
+
+
+![Output-team-profile-generate]()
 
 ## Table of Contents 
 
