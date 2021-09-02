@@ -1,3 +1,3 @@
-const Prompts = require("./lib/Prompts");
+const Prompt = require("./lib/Prompts");
 
-new Prompts().promptUser();
+new Prompt().promptUser();
